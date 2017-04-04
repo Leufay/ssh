@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.myjava.entity">
+	<class name="User" table="user">
+		<id name="id" column="user_id" type="long" length="5">
+			<generator class="identity"></generator>
+		</id>
+		<property name="username" />
+		<property name="password" />
+		
+	</class>
+</hibernate-mapping>
