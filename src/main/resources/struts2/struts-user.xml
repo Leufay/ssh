@@ -7,6 +7,7 @@
 	<package name="user" namespace="/user" extends="struts-default">
 		<action name="userAction_*" class="userAction" method="{1}">
 			<result name="list">/WEB-INF/jsp/user/list.jsp</result>
+			<!-- strust2 2.5之后用到通配符时需要设定 -->
 			<allowed-methods>sayHello</allowed-methods>
 		</action>
 	</package>
